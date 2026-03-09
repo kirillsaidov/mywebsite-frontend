@@ -1,0 +1,14 @@
+services:
+  mywebsite-frontend:
+    build: .
+    container_name: mywebsite-frontend
+    ports:
+      - "${FRONTEND_PORT:-80}:80"
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true
+    name: mywebsite_app-network
