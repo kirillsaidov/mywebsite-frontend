@@ -1,4 +1,4 @@
-# mywebsite-frontend
+# My Website
 
 Vue.js frontend for my website.
 
